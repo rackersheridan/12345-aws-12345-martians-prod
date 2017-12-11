@@ -1,7 +1,7 @@
 module "base_module" {
   source = "./base-network"
-  Environment = "training"
-  Name = "base_training_module"
+  environment = "training"
+  name = "base_training_module"
 }
 
 provider "aws" {
