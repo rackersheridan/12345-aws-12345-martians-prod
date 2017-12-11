@@ -3,7 +3,7 @@ module "base_module" {
 }
 
 provider "aws" {
-  allowed_account_ids = "219831553792"
+  allowed_account_ids = ["219831553792"]
   region              = "us-east-2"
 }
 
