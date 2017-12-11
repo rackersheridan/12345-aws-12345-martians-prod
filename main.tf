@@ -21,4 +21,5 @@ resource "aws_instance" "web" {
   ami = "ami-aa1b34cf"
   subnet_id = "${module.base_module.public_subnets[0]}"
   instance_type = "t2.micro"
+  user_data = "${file("./bootstrap.sh")}"
 }
