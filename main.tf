@@ -3,8 +3,8 @@ module "base_module" {
 }
 
 provider "aws" {
-  allowed_account_ids = "${var.account_ids}"
-  region              = "${var.aws_region}"
+  allowed_account_ids = "219831553792"
+  region              = "us-east-2"
 }
 
 terraform {
